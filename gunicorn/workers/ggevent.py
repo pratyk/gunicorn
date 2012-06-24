@@ -62,8 +62,12 @@ class GeventWorker(AsyncWorker):
             server = StreamServer(self.socket, handle=self.handle, spawn=pool)
 
         server.start()
+        pid = os.getpid()
         try:
             while self.alive:
+                if pid != os.getpid():
+                    break
+
                 self.notify()
                 if self.ppid != os.getppid():
                     self.log.info("Parent changed, shutting down: %s", self)
