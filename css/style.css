@@ -80,7 +80,7 @@ a:hover {
     background: url(../images/banner-bg.jpg) repeat;
     display: block;
     width: 100%;
-    min-height: 390px;
+    min-height: 365px;
     margin-top: 1px;
     margin-bottom: 1px;
 }
@@ -95,10 +95,10 @@ a:hover {
     width: 250px;
     margin: 0 auto;
     margin-top: 32px;
+    text-align:center;
 }
 
-.bannerContain {
-    font: Arial, Helvetica, sans-serif;
+.banner h1 {
     font-size: 20px;
     font-weight: lighter;
     color: #FFF;
@@ -184,7 +184,7 @@ a:hover {
     margin-bottom: 25px;
 }
 
-.tabs li {
+.tab-bar li {
     width: 230px;
     padding: 3px;
     text-align: center;
@@ -193,23 +193,23 @@ a:hover {
     margin-left: 6px;
 }
 
-.tabs li a {
+.tab-bar li a {
     display: inline-block;
 }
 
-.tabs li a:hover > p,
-.tabs li a:hover > h2 {
+.tab-bar li a:hover > p,
+.tab-bar li a:hover > h2 {
     color: #1D692D;
 }
 
-.tabs li a p,
-.tabs li a h2 {
+.tab-bar li a p,
+.tab-bar li a h2 {
     color: #404028;
     margin-top: 8px;
     line-height: 1.2;
 }
 
-.tabs li a h2 {
+.tab-bar li a h2 {
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -271,7 +271,25 @@ a:hover {
 }
 
 .tab-box p {
-    margin-top: 10px;
+    margin: 0 0 9px;
+}
+
+.tab-box ul {
+    padding-left: 40px;
+}
+
+.tab-box li {
+    list-style: disc;
+    margin: 0 0 9px;
+}
+
+.tab-box a {
+    color: #3F3F27;
+    text-decoration: underline;
+}
+
+.tab-box a:hover {
+    color: #1D692D;
 }
 
 .arrow {
@@ -281,6 +299,24 @@ a:hover {
     top: -7px;
     height: 10px;
     width: 20px;
+}
+
+pre {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 14px;
+    color: #333333;
+    display: block;
+    padding: 8.5px;
+    margin: 0 0 9px;
+    font-size: 14px;
+    line-height: 18px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: #EEFFCC;
+    border-top: 1px solid #A9CC99;
+    border-bottom: 1px solid #A9CC99;
 }
 
 .user-wrapper {
@@ -344,4 +380,13 @@ a:hover {
     width: 930px;
     background: url(../images/footer-logo.jpg) no-repeat 0 50%;
     padding-left: 70px;
+}
+
+.footer-wp a {
+    color: #3F3F27;
+    text-decoration: underline;
+}
+
+.footer-wp a:hover {
+    color: #1D692D;
 }
